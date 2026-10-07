@@ -1,2 +1,2 @@
 # Proyecto-PIROTECHNY
-Este repositorio es diseñado para la asignatura de programación y diseño de aplicaciones. 
+Este desarrollo esta diseñado web esta diseñado para ofrecer servicios de pirotecnia, luces para eventos y sonido
