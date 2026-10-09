@@ -1,26 +1,39 @@
+/*RESET*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Desplazamienti suave del html*/
 html {
     scroll-behavior: smooth;
 }
 
+/*Configuraciones generales*/
 body {
     margin:0;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: #4769ac;
+    font-family:'Merriweather', Arial, sans-serif;
+    color: #5f0c0c;
     background-color: #f7edde;
     overflow-x: hidden;
 }
 
+.merriweather-uniquifier> {
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "width" 100;
+}
+
+/* Contenedor principal */
 .container { width: min(1100px,
         calc(100% - 2rem)); 
         margin: 0 auto;
         }
 
+/* Congifuraciones para el header- Encabezado */
 .sitio-header {
   position: sticky;
   top: 0;
@@ -30,6 +43,7 @@ body {
   border-bottom: 1px solid var(--line);
 }
 
+/* Configuraciones internas del encabezado-header-inner */
 .header-inner {
   display: flex;
   align-items: center;
@@ -41,9 +55,84 @@ body {
 .logo { 
   display: flex;
   align-items: center;
-  gap: .6rem;
-  font-family: "Fraunces", serif;
+  gap: 0.6rem;
+  font-family: "Merriweather", serif;
   font-weight: 700;
   font-size: 1.1rem;
   color: black;
+  text-decoration:none;
+}
+
+/* Listas*/
+ul{
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+/*Menú principal de navegación */
+.main-nav{
+    display: none;
+    align-items:center;
+    gap: 1.5rem;
+}
+
+/* Lista sea Horizontal */
+.main-nav ul {
+    display:flex;
+    gap: 1.5rem;
+}
+
+.main-nav a {
+    font-weight:600;
+    transition: color .2s ease;
+}
+
+.main-nav a:hover {
+    color: #142651
+}
+
+.menu-toggle {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid #992b2b;
+  background: #f0eaea;
+  color: #3f2222;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.mobile-nav {
+  max-height: 0;
+  overflow: hidden;
+  border-top: 1px solid #973f3f;
+  background: #711212;
+  transition: max-height .28s ease;
+}
+.mobile-nav.open { max-height: 360px; }
+.mobile-nav ul {
+    display: flex; 
+    flex-direction: column; 
+    gap: .3rem; 
+    padding: 1rem 1.25rem; 
+}
+    
+.mobile-nav li a { 
+    display: block; 
+    padding: .7rem .5rem; 
+    border-radius: .6rem; 
+    font-weight: 600; }
+
+
+@media (min-width: 768px) {
+  .main-nav { display: flex; }
+  .menu-toggle, .mobile-nav { display: none; }
 }
