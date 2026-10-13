@@ -35,31 +35,23 @@
 
     <nav class="main-nav">
         <ul> 
-            <li>
-            <a href="#inicio">Inicio</a>
-            </li>
-
-            <li>
-            <a href="#servicios">Servicios</a>
-            </li>
-
-            <li>
-            <a href="#nosotros">Nosotros</a>
-            </li>
-
-            <li>
-            <a href="#contacto">Contacto</a>
-            </li>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#contacto">Contacto</a></li>
          </ul>
 
 
     </nav>
 
-    <button id="menu-toggle" class="menu-toggle"
-    aria-label="Abrir menú" aria-expanded="false" 
-    aria-controls="mobile-menu">☰</button>
-    </div>
 
+   <!-- Botón Menú Móvil -->
+  <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+    <!-- Navegación Móvil-->
     <nav id="mobile-menu" class="mobile-nav">
       <ul>
         <li>
@@ -80,37 +72,132 @@
       </ul>
 
     </nav>
+  
+</header>
 
-
-    </header>
-
+<!-- INICIO MAIN (PRINCIPAL) del DESARROLLO WEB -->
     <main> 
-        <!-- SECCIÓN CARRUSEL-->
+        <!-- HERO / CARRUSEL INTERACTIVO DE 3 IMÁGENES -->
 
-    <section id="carrusel" class="carousel-section container">
-        <h2> Productos y Servicios </h2>
+    <section id="inicio" class="hero-section">
         <div class="carousel-track" id="carouseltrackebc">
+
             <!-- Primera imagen hero -->
           <div class="carousel-slide"> 
             <img src="img/hero1.jpg" alt="imagen hero1">
-          </div>
+          <div class="slide-overlay">
+                        <span class="badge">Luces</span>
+                        <h1>Fuegos Artificiales <span class="highlight-yellow">en tus eventos</span></h1>
+                        <p>Transformamos tu espacio en una experiencia audiovisual inmersiva fuera de este mundo.</p>
+                        <a href="#servicios" class="btn-hero">Descubrir servicios</a>
+                    </div>
+                 </div>
 
-          <!-- segunda imagen hero -->
+          <!-- Segunda imagen hero -->
           <div class="carousel-slide"> 
             <img src="img/hero2.jpg" alt="imagen hero2">
-          </div>
+            <div class="slide-overlay">
+                        <span class="badge">Música</span>
+                        <h1>Venta y Comercialización de Pirotecnia<span class="highlight-yellow"></span></h1>
+                        <p>Transformamos tu espacio en una experiencia audiovisual inmersiva fuera de este mundo.</p>
+                        <a href="#servicios" class="btn-hero">Descubrir servicios</a>
+                    </div>
+                 </div>
 
           <!-- Tercera imagen hero -->
           <div class="carousel-slide"> 
             <img src="img/hero3.jpg" alt="imagen hero3">
+            <div class="slide-overlay">
+                        <span class="badge">Eventos</span>
+                        <h1>Efectos Especiales<span class="highlight-yellow">Luz, Color y Espectáculo</span></h1>
+                        <p>Transformamos tu espacio en una experiencia audiovisual inmersiva fuera de este mundo.</p>
+                        <a href="#servicios" class="btn-hero">Descubrir servicios</a>
+                    </div>
+                 </div>
+
           </div>
 
-    </div>
+    <!-- Botones de Navegación del Carrusel -->
+            <button id="btn-prev" class="carousel-arrow prev" aria-label="Imagen anterior">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button id="btn-next" class="carousel-arrow next" aria-label="Imagen siguiente">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+
+      <!-- Puntos Indicadores -->
+            <div class="carousel-dots" id="carousel-dots">
+                <button class="dot active" aria-label="Ir a diapositiva 1"></button>
+                <button class="dot" aria-label="Ir a diapositiva 2"></button>
+                <button class="dot" aria-label="Ir a diapositiva 3"></button>
+            </div>
+
 
     </section>
    
+    <!-- SECCIÓN DE SERVICIOS -->
+        <section id="servicios" class="servicios-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>NUESTROS SERVICIOS</h2>
+                    <h3>Soluciones de Pirotecnia para Todo Tipo de Eventos</h3>
+                </div>
     
+                <div class="cards-grid">
+                    <div class="card">
+                        <div class="card-icon yellow"><i class="fa fa-child"></i></div>
+                        <h4>Diseño y Espectáculos Pirotécnicos</h4>
+                        <p>Diseñamos y realizamos espectáculos de fuegos artificiales personalizados para bodas, conciertos, eventos empresariales y celebraciones especiales, creando momentos únicos e inolvidables.</p>
+                    </div>
 
+                   <div class="card">
+                        <div class="card-icon red"><i class="fa fa-headphones"></i></div>
+                        <h4>Sincronización de Música</h4>
+                        <p>Creamos shows que combinan fuegos artificiales con música y efectos visuales, logrando una experiencia llena de emoción para conciertos, festivales y eventos especiales.</p>
+                    </div>
+
+                   <div class="card">
+                        <div class="card-icon yellow"><i class="fa-solid fa-microchip"></i></div>
+                        <h4>Planeación y Seguridad Pirotécnica</h4>
+                        <p>Organizamos cada detalle del espectáculo, desde la selección de efectos hasta la coordinación técnica, priorizando la seguridad, el cumplimiento de las normas y la tranquilidad de nuestros clientes.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+     <!-- SECCIÓN NOSOTROS -->
+        <section id="nosotros" class="nosotros-section">
+            <div class="container nosotros-inner">
+                <div class="nosotros-img">
+                    <img src="img/producto.jpg" alt="Experiencia cine en familia">
+                </div>
+                <div class="nosotros-info">
+                    <h2>SOBRE NOSOTROS</h2>
+                    <h3>Apasionados por la pirotecnia y los momentos inolvidables.</h3>
+                    <p>En <strong>PIROTECHNY</strong>, nos especializamos en la venta, comercialización y creación de espectáculos pirotécnicos para todo tipo de eventos. Nuestro objetivo es transformar cada celebración en una experiencia única, combinando creatividad, calidad y seguridad.</p>
+                    <p>Ofrecemos soluciones personalizadas para iluminar tus momentos más especiales y crear recuerdos que duren para siempre.</p>
+                    <div class="stats">
+                        <div class="stat-box">
+                            <span class="stat-num yellow">+150</span>
+                            <span class="stat-lbl">Eventos y celebraciones</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-num red">100%</span>
+                            <span class="stat-lbl">Compromiso a la seguirdad</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+     <!-- SECCIÓN CONTACTO -->
+        <section id="contacto" class="contacto-section">
+            <div class="container">
+                <h2>Contacto</h2>
+                <p>Hablemos de tu evento.</p>
+            </div>
+        </section>
     </main>
 
     <footer>
@@ -133,14 +220,16 @@
       </a>
     </div>
   </div>
+
   <div class="footer-bottom">
     <div class="container">
-      &copy; <span id="anio"></span> PIROTECHNY 
+       &copy; <span id="anio"></span> PIROTECHNY 
 
     </div>
   </div>
 </footer>
 
+<!-- Archivo de JavaScript Externo -->
 <script src="js/script.js"></script>
 
 
